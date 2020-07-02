@@ -266,6 +266,7 @@ class AjaxCtrl extends MetricsPanelCtrl {
         headers: this.getHeaders(),
         cache: false,
         withCredentials: this.panel.withCredentials,
+        rejectUnauthorized: false,
       };
       options.headers = options.headers || {};
 
